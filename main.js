@@ -7,12 +7,12 @@ $(document).ready(function(){
         speed: 300,
         responsive: [
             {
-                breakpoint: 380,
+                breakpoint: 380, 
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    slidesToShow: 1
                 }
             }
-        ],
+        ]
     });
 });
