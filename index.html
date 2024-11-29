@@ -1,85 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <script src="calc.js" defer></script>
-    <title>NorrkeN's calculator</title>
-
-    <style>
-        body{
-            background-color: gray;
-        }
-        .calc_container, .menu_container{
-            border: 2px solid;
-            border-radius: 20px;
-            background-color: darkgray;
-        }
-        .hidden{
-            display: none;
-        }
-    </style>
-
-    <body>
-        <div class="container">
-            <div class="row justify-content-center mt-3 mt-md-5">
-                <div class="calc_container col-8 col-md-6 mx-2 py-3">
-                    <h1 class="text-center">Калькулятор стоимости заказа</h1>                    
-                    <label for="quantity" class="py-2">Количество</label>
-                    <input type="number" id= "quantity" min="1" value="1" 
-                        class="form-control">
-        
-                    <h3>Выберите товар:</h3>
-                    <label class="">
-                        <input type="radio" name="productName" value="type1" checked>Пицца
-                        <input type="radio" name="productName" value="type2">Ванильный капучино
-                        <input type="radio" name="productName" value="type3">Кулебяка
-                    </label>
-                    
-                    <div id="options-container" class="hidden">
-                        <label for="options">Выберите дополнительную опцию</label>
-                        <select id="options" class="col-6">
-                            <option value="option_1">0.25</option>
-                            <option value="option_2">0.5 (+25р)</option>
-                            <option value="option_3">Разлить на кассовый аппарат - бесценно</option>
-                        </select>
-                    </div>
-
-                    <div id="addition-container" class="hidden">
-                        <label for="addition">
-                            <input type="checkbox" id="addition">Разогреть (+20)
-                        </label>
-                    </div>
-
-                    <h2 id="total" class="text-center d-flex flex-row-reverse
-                        mx-3">Стоимость:</h2>
-                </div>
+    <title>Gallery</title>
     
-                <div class="menu_container col-6 col-md-4 mx-2 my-2 my-md-5 py-1">
-                    <table class="table table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th>Название</th>
-                                <th>Цена (руб.)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Пицца</td>
-                                <td>250</td>
-                            </tr>
-                            <tr>
-                                <td>Ванильный капучино</td>
-                                <td>64</td>
-                            </tr>
-                            <tr>
-                                <td>Кулебяка</td>
-                                <td>150</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <link href="styles.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+</head>
+
+<style>
+    body{
+        background-color: darkgray;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="mt-5 pt-5 d-flex justify-content-center">
+            <div class = "aircraft_gallery col-9">
+                <div><img width="256" height="128" src="F-4 Phantom.jpg" alt=""></div>
+                <div><img width="256" height="128" src="F-16.jpg" alt=""></div>
+                <div><img width="256" height="128" src="F-35.jpg" alt=""></div>
+                <div><img width="256" height="128" src="F-14.jpg" alt=""></div>
+                <div><img width="256" height="128" src="F-4 Phantom flyby.jpg" alt=""></div>
+                <div><img width="256" height="128" src="Frogfoot.jpg" alt=""></div>
+                <div><img width="256" height="128" src="A32A.jpg" alt=""></div>
+                <div><img width="256" height="128" src="Saab J35 Draken.jpg" alt=""></div>
+                <div><img width="256" height="128" src="A-10.jpg" alt=""></div>
+                <div><img width="256" height="128" src="Panavia Tornado 1.jpg" alt=""></div>
+                <div><img width="256" height="128" src="Panavia Tornado.jpg" alt=""></div>
             </div>
         </div>
-    </body>
+    </div>
+    
+    <script src="jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
