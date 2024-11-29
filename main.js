@@ -7,7 +7,7 @@ $(document).ready(function(){
         speed: 300,
         responsive: [
             {
-                breakpoints: 350,
+                breakpoints: 280,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
